@@ -6,5 +6,6 @@ dist/
 wheels/
 *.egg-info
 .env
+pytorch_model.bin
 # Virtual environments
 .venv
