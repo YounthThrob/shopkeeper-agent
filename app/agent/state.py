@@ -4,7 +4,7 @@ from ..entities.column_info import ColumnInfo
 from ..entities.value_info import ValueInfo
 from ..entities.metric_info import MetricInfo
 
-class DataState(TypedDict):
+class DataAgentState(TypedDict):
     """
     一次问数链路中的核心状态
     """
