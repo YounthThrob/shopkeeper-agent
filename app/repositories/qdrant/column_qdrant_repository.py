@@ -11,8 +11,8 @@ from qdrant_client import AsyncQdrantClient
 from qdrant_client.http.models import PointStruct
 from qdrant_client.models import Distance, VectorParams
 
-from app.conf.app_config import app_config
-from app.entities.column_info import ColumnInfo
+from ...conf.app_config import app_config
+from ...entities.column_info import ColumnInfo
 
 
 class ColumnQdrantRepository:

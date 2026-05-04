@@ -7,8 +7,8 @@ ColumnMetric 映射器
 
 from dataclasses import asdict
 
-from app.entities.column_metric import ColumnMetric
-from app.models.column_metric import ColumnMetricMySQL
+from .....entities.column_metric import ColumnMetric
+from .....models.column_metric import ColumnMetricMySQL
 
 
 class ColumnMetricMapper:

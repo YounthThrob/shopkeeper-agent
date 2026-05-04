@@ -7,8 +7,8 @@ ColumnInfo 映射器
 
 from dataclasses import asdict
 
-from app.entities.column_info import ColumnInfo
-from app.models.column_info import ColumnInfoMySQL
+from .....entities.column_info import ColumnInfo
+from .....models.column_info import ColumnInfoMySQL
 
 
 class ColumnInfoMapper:

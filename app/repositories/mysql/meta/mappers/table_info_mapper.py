@@ -7,8 +7,8 @@ TableInfo 映射器
 
 from dataclasses import asdict
 
-from app.entities.table_info import TableInfo
-from app.models.table_info import TableInfoMySQL
+from .....entities.table_info import TableInfo
+from .....models.table_info import TableInfoMySQL
 
 
 class TableInfoMapper:

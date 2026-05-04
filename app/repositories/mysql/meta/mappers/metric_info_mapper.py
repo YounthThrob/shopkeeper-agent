@@ -7,8 +7,8 @@ MetricInfo 映射器
 
 from dataclasses import asdict
 
-from app.entities.metric_info import MetricInfo
-from app.models.metric_info import MetricInfoMySQL
+from .....entities.metric_info import MetricInfo
+from .....models.metric_info import MetricInfoMySQL
 
 
 class MetricInfoMapper:

@@ -10,8 +10,8 @@
 from qdrant_client import AsyncQdrantClient
 from qdrant_client.models import Distance, PointStruct, VectorParams
 
-from app.conf.app_config import app_config
-from app.entities.metric_info import MetricInfo
+from ...conf.app_config import app_config
+from ...entities.metric_info import MetricInfo
 
 
 class MetricQdrantRepository:

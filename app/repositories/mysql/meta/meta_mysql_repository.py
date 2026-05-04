@@ -11,16 +11,16 @@ Repository 自身只关心“如何写入”，而“哪些写操作要放在同
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.entities.column_info import ColumnInfo
-from app.entities.column_metric import ColumnMetric
-from app.entities.metric_info import MetricInfo
-from app.entities.table_info import TableInfo
-from app.models.column_info import ColumnInfoMySQL
-from app.models.table_info import TableInfoMySQL
-from app.repositories.mysql.meta.mappers.column_info_mapper import ColumnInfoMapper
-from app.repositories.mysql.meta.mappers.column_metric_mapper import ColumnMetricMapper
-from app.repositories.mysql.meta.mappers.metric_info_mapper import MetricInfoMapper
-from app.repositories.mysql.meta.mappers.table_info_mapper import TableInfoMapper
+from ....entities.column_info import ColumnInfo
+from ....entities.column_metric import ColumnMetric
+from ....entities.metric_info import MetricInfo
+from ....entities.table_info import TableInfo
+from ....models.column_info import ColumnInfoMySQL
+from ....models.table_info import TableInfoMySQL
+from ....repositories.mysql.meta.mappers.column_info_mapper import ColumnInfoMapper
+from ....repositories.mysql.meta.mappers.column_metric_mapper import ColumnMetricMapper
+from ....repositories.mysql.meta.mappers.metric_info_mapper import MetricInfoMapper
+from ....repositories.mysql.meta.mappers.table_info_mapper import TableInfoMapper
 
 
 class MetaMySQLRepository:

@@ -11,7 +11,7 @@ from dataclasses import asdict
 
 from elasticsearch import AsyncElasticsearch
 
-from app.entities.value_info import ValueInfo
+from ...entities.value_info import ValueInfo
 
 
 class ValueESRepository:
