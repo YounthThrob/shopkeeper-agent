@@ -29,6 +29,16 @@ class TableInfoState(TypedDict):
     description: str
     columns: list[ColumnInfoState]
 
+class DateInfoState(TypedDict):
+    date: str
+    weekday: str
+    quarter: str
+
+
+class DBInfoState(TypedDict):
+    dialect: str
+    version: str
+
 
 class DataAgentState(TypedDict):
     """
@@ -41,4 +51,6 @@ class DataAgentState(TypedDict):
     retrieved_value_infos: list[ValueInfo]  # 检索到的取值信息
     table_infos: list[TableInfoState]  # 合并和补齐后的表结构上下文
     metric_infos: list[MetricInfoState]  # 合并后的指标上下文
+    date_info: DateInfoState  # 当前日期 星期和季度信息
+    db_info: DBInfoState  # 数据库方言和版本信息
     error: str # 检验sql时出现的错误信息
