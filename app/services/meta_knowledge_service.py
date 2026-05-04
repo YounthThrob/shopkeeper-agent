@@ -15,18 +15,18 @@ from pathlib import Path
 from langchain_huggingface import HuggingFaceEndpointEmbeddings
 from omegaconf import OmegaConf
 
-from app.conf.meta_config import MetaConfig
-from app.core.log import logger
-from app.entities.column_info import ColumnInfo
-from app.entities.column_metric import ColumnMetric
-from app.entities.metric_info import MetricInfo
-from app.entities.table_info import TableInfo
-from app.entities.value_info import ValueInfo
-from app.repositories.es.value_es_repository import ValueESRepository
-from app.repositories.mysql.dw.dw_mysql_repository import DWMySQLRepository
-from app.repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepository
-from app.repositories.qdrant.column_qdrant_repository import ColumnQdrantRepository
-from app.repositories.qdrant.metric_qdrant_repository import MetricQdrantRepository
+from ..conf.meta_config import MetaConfig
+from ..core.log import logger
+from ..entities.column_info import ColumnInfo
+from ..entities.column_metric import ColumnMetric
+from ..entities.metric_info import MetricInfo
+from ..entities.table_info import TableInfo
+from ..entities.value_info import ValueInfo
+from ..repositories.es.value_es_repository import ValueESRepository
+from ..repositories.mysql.dw.dw_mysql_repository import DWMySQLRepository
+from ..repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepository
+from ..repositories.qdrant.column_qdrant_repository import ColumnQdrantRepository
+from ..repositories.qdrant.metric_qdrant_repository import MetricQdrantRepository
 
 
 class MetaKnowledgeService:
