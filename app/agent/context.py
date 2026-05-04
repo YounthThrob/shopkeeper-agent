@@ -6,6 +6,7 @@ from ..repositories.es.value_es_repository import ValueESRepository
 from ..repositories.qdrant.column_qdrant_repository import ColumnQdrantRepository
 from ..repositories.qdrant.metric_qdrant_repository import MetricQdrantRepository
 from ..repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepository
+from ..repositories.mysql.dw.dw_mysql_repository import DWMySQLRepository
 
 
 class DataAgentContext(TypedDict):
@@ -21,3 +22,5 @@ class DataAgentContext(TypedDict):
     value_es_repository: ValueESRepository
     # 元数据库仓储，合并阶段用它按 id 补齐字段、表、主外键信息
     meta_mysql_repository: MetaMySQLRepository
+    # 数据仓库仓储，
+    dw_mysql_repository: DWMySQLRepository
