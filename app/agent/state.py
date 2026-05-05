@@ -53,4 +53,5 @@ class DataAgentState(TypedDict):
     metric_infos: list[MetricInfoState]  # 合并后的指标上下文
     date_info: DateInfoState  # 当前日期 星期和季度信息
     db_info: DBInfoState  # 数据库方言和版本信息
+    sql: str # sql语句
     error: str # 检验sql时出现的错误信息
